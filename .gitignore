@@ -1,0 +1,11 @@
+bin/
+ROADMAP.md
+.env
+.env.*
+config.json
+slack_token
+slack_cookie
+*.log
+*.jsonl
+state.json
+state.json.*

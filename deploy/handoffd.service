@@ -1,0 +1,14 @@
+[Unit]
+Description=handoffd: Slack mentions to coding-agent windows
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/handoffd watch
+Restart=on-failure
+RestartSec=15
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=default.target
